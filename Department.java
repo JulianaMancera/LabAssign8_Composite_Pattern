@@ -1,10 +1,9 @@
 import java.util.*;
-
-public class College implements NEU_Unit {
+public class Department implements NEU_Unit {
     private String name;
     private List<NEU_Unit> components = new ArrayList<>();
 
-    public College(String name) {
+    public Department(String name) {
         this.name = name;
     }
 
@@ -18,7 +17,7 @@ public class College implements NEU_Unit {
 
     @Override
     public void displayDetails() {
-        System.out.println("College: " + name);
+        System.out.println("Department: " + name);
         for (NEU_Unit component : components) {
             component.displayDetails();
         }
